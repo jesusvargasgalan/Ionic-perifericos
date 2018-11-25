@@ -29,12 +29,12 @@ de componentes informáticos.A continuación procedo con la explicación
 
 6 Volviendo al menú principal vemos 2 botones a la derecha, el botón con un lápiz nos permitirá Editar saliendonos el siguiente mensaje al pulsa
 <br/>
-<img src=../capturas-ionic/captura6.JPG width=600px>
+<img src=./capturas-ionic/captura6.JPG width=600px>
 <br/>
 
 7 Pasaríamos a la ventana de edición donde nosotros hemos añadido una cara más al valor de Satisfacción como se ve en la imagen
 <br/>
-<img src=./capturas-ionic/captura7.JPGwidth=600px>
+<img src=./capturas-ionic/captura7.JPG width=600px>
 <br/>
 
 8 Si vemos las características del "Disco Duro" editado vemos como ha cambiado la satisfacción
