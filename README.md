@@ -14,7 +14,7 @@ de componentes informáticos.A continuación procedo con la explicación
 
 3 Para concluir con la edición tendremos que seleccionar la satisfacción del producto,cuando están en blancas es que no están seleccionadas y a medida que vayamos clickando se rellenarán y se pintarán de color negro como vemos en la imagen
 <br/>
-<img src=./capturas-ionic/captura3.JPGwidth=600px>
+<img src=./capturas-ionic/captura3.JPG width=600px>
 <br/>
 
 4 Al darle al guarda iriamos a la pantalla principal donde vemos como nuestro producto se ha guardado
