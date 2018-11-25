@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button href="/home">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Periféricos</ion-title>
+
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <p><strong>Todos los campos son obligatorios</strong></p>
+  
+  <ion-item>
+    <ion-label>Periféricos*</ion-label>
+    <ion-select  [(ngModel)]="Lista.periferico" ok-text="Aceptar" cancel-text="Cancelar">
+      <ion-select-option value="Memoria ram">RAM</ion-select-option>
+      <ion-select-option value="Disco duro">Disco duro</ion-select-option>
+      <ion-select-option value="Teclado">Teclado</ion-select-option>
+      <ion-select-option value="Ratón">Ratón</ion-select-option>
+      <ion-select-option value="Monitor">Monitor</ion-select-option>
+      <ion-select-option value="Tarjeta grafica">Tarjeta gráfica</ion-select-option>
+      <ion-select-option value="Placa base">Placa base</ion-select-option>
+      <ion-select-option value="Fuente de alimentacion">Fuente de alimentación</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Marca*</ion-label>
+    <ion-input clearInput [(ngModel)]="Lista.marca"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Modelo*</ion-label>
+    <ion-input clearInput [(ngModel)]="Lista.modelo"></ion-input>
+  </ion-item>
+ 
+
+  <ion-item>
+    <ion-label>Satisfacción*</ion-label><br><br>
+   
+      <ion-icon *ngIf="!rating1" name="md-happy" (click)="setRating1()"></ion-icon>
+      <ion-icon *ngIf="rating1" name="ios-happy" (click)="setRating1()"></ion-icon>
+      <ion-icon *ngIf="!rating2" name="md-happy" (click)="setRating2()"></ion-icon>
+      <ion-icon *ngIf="rating2" name="ios-happy" (click)="setRating2()"></ion-icon>
+      <ion-icon *ngIf="!rating3" name="md-happy" (click)="setRating3()"></ion-icon>
+      <ion-icon *ngIf="rating3" name="ios-happy" (click)="setRating3()"></ion-icon>
+    
+  </ion-item>
+  <ion-button   (click)="saveLista(Lista)" color="light" expand="full">Guardar</ion-button>
+</ion-content>

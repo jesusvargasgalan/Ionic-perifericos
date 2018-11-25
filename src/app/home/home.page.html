@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Almacén
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button href="/edit" routerDirection="forward">
+        <ion-icon name="md-add-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list lines="full">
+        <ion-item *ngFor="let t of perifericos; let p = index ; ">
+       
+          
+          <ion-label (click)="muestraDetalles(p)">{{ t.periferico}}
+          </ion-label>  
+      
+          <ion-icon (click)="editLista(t.periferico,t.id)" name="ios-create"></ion-icon>
+          <ion-icon (click)="deleteDialog(t.periferico, t.id)" name="ios-trash"></ion-icon>
+        </ion-item>
+      </ion-list>
+     
+  
+  
+  
+</ion-content>
