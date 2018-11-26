@@ -17,7 +17,7 @@ export class DetallesPage implements OnInit {
 
       this.indice = this.navParams.get('index');
       
-      console.log(this.indice)
+      
       
     } 
     
@@ -25,7 +25,7 @@ export class DetallesPage implements OnInit {
     this.periferico = this.listaServices.getListaById(this.indice);
    
     
-    console.log(this.periferico)
+   
   }
   close() {
     this.modalController.dismiss();
